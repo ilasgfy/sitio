@@ -1,0 +1,26 @@
+{% include  'admin/cabecera.html' %}
+
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-6">
+        <div
+            class="h-100 p-5 text-white bg-primary border rounded-3">
+            <br>
+            <h2>Bienvenid@ <strong> {{ session['usuario'] }}</strong> al administrador del sitio web</h2>
+            <p></p>
+            <a name="" id="" class="btn btn-success" href="/admin/login" role="button">Login</a>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div
+            class="h-100 p-5 text-white bg-primary border rounded-3">
+            <h2>Archivos</h2>
+            <p>Aquí podrá administrar los archivos del sitio web.</p>
+            <a name="" id="" class="btn btn-success" href="/admin/libros" role="button">Empezar la gestion</a>
+    </div>
+</div>
+
+
+{% include  'admin/pie.html' %}
+
+
